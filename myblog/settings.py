@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path
 import os
+import django_heroku
 from django.contrib.messages import constants as messages
 
 # Build paths inside the project like this: os.path.join(BASE_DIR,___)
@@ -130,8 +131,8 @@ STATICFILES_DIRS = [
 STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 
 STATIC_URL = '/static/'
-
-
+#Activate Django-Heroku
+django_heroku.settings(local())
 MESSAGE_TAGS = {
     messages.ERROR: 'danger',
 }
