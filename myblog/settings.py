@@ -27,7 +27,7 @@ SECRET_KEY = os.environ['SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["codeinsight21.herokuapp.com","127.0.0.1" ]
+ALLOWED_HOSTS = ["codeinsight21.herokuapp.com","localhost" ]
 
 
 # Application definition
@@ -130,6 +130,7 @@ STATICFILES_DIRS = [
 STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 
 STATIC_URL = '/static/'
+
 
 MESSAGE_TAGS = {
     messages.ERROR: 'danger',
