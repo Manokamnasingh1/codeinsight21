@@ -22,12 +22,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ['SECRET_KEY']
+SECRET_KEY ='@=$-e#ww!!)0)-&jyuj&^o@uc0b)016s2e^+$vcqew*$6=&ju1'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["codeinsight21.herokuapp.com","localhost" ]
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -46,7 +46,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiceMiddleware',
+    'Whitenoise.middleware.security.WhitenoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -129,6 +129,9 @@ STATICFILES_DIRS = [
 STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 
 STATIC_URL = '/static/'
+
+STATICFILES_STORAGE = 'Whitenoise.storage.CompressedManifeststaticFilesStorage'
+
 
 MESSAGE_TAGS = {
     messages.ERROR: 'danger',
