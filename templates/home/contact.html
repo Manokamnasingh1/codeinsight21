@@ -4,7 +4,9 @@
 {% block contactactive %} active {% endblock contactactive %}
 {% block body %}
 <div class="container my-3">
+<span class="border">
 <h3 style="text-align:center"> Contact code insight Admin</h3>
+</span>
 <form method="post"action="/contact">
 {% csrf_token %}
   <div class="form-group">
