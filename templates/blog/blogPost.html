@@ -6,18 +6,6 @@
 {% block body %}
 <div class="container my-3">
     <h2 class="blog-post-title">{{post.title}}</h2>
-        <i class="mdi-action-favorite red-text text-lighten-1"></i> <a href="#" onclick="AddValue()">0</a>
-
-<script>
-var startingNumber = 0;
-
-function AddValue()
-{
-   startingNumber++;
-   $(this).text(startingNumber);
-}
-
-</script>
         <p class="blog-post-meta">{{post.timeStamp}} by <a href="/about">{{post.auther}} </a></p>
          <p>{{post.content|safe}}</p>
          <hr>
