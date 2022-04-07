@@ -1,6 +1,11 @@
+
+{% load static %}
 <!doctype html>
 <html lang="en">
   <head>
+
+    <link href="{% static '/css/main.css'  %}" rel="stylesheet" type="text/css">
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-VVF4XGSGWC"></script>
 <script>
@@ -19,37 +24,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
     <title>{% block title %} {%endblock title %}</title>
-    <style>
-        <div class="global-container">
-	<div class="card login-form">
-	<div class="card-body">
-		<h3 class="card-title text-center">Log in to Codepen</h3>
-		<div class="card-text">
-			<!--
-			<div class="alert alert-danger alert-dismissible fade show" role="alert">Incorrect username or password.</div> -->
-			<form>
-				<!-- to error: add class "has-danger" -->
-				<div class="form-group">
-					<label for="exampleInputEmail1">Email address</label>
-					<input type="email" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp">
-				</div>
-				<div class="form-group">
-					<label for="exampleInputPassword1">Password</label>
-					<a href="#" style="float:right;font-size:12px;">Forgot password?</a>
-					<input type="password" class="form-control form-control-sm" id="exampleInputPassword1">
-				</div>
-				<button type="submit" class="btn btn-primary btn-block">Sign in</button>
-
-				<div class="sign-up">
-					Don't have an account? <a href="#">Create One</a>
-				</div>
-			</form>
-		</div>
-	</div>
-</div>
-</div>
-
-    </style>
+    
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -202,40 +177,46 @@
 
     {% block body %}
     {% endblock body %}
-    <div class="modal-content rounded-6 ">
-    <div class="newslettre-info" style="user-select: auto;">
-	    <div style="text-align:center">
-                    <h5 style="user-select: auto;">Follow Me:-</h5>
-                    <p style="user-select: auto;"> My social media links </p>
-                </div>
-	        <div style="text-align:center">
-                <div class="social-icones" style="user-select: auto;">
-                    <ul class="list-inline" style="user-select: auto;">
-                        <li style="user-select: auto;">
-                            <a target="_blank" href="https://www.linkedin.com/in/manokamna-singh-b25017213" style="user-select: auto;">
-                                <i class="fab fa-linkedin" style="user-select: auto;"></i>Linkedin</a>
-                        </li>
-                        <li style="user-select: auto;">
-                            <a target="_blank" href="https://github.com/Manokamnasingh1" style="user-select: auto;">
-                                <i class="fab fa-github" style="user-select: auto;"></i>Github</a>
-                        </li>
-                        <li style="user-select: auto;">
-                            <a target="_blank" href="#" style="user-select: auto;">
-                                <i class="fab fa-facebook-f" style="user-select: auto;"></i>Facebook</a>
-                        </li>
-                        <li style="user-select: auto;">
-                            <a target="_blank" href="https://www.instagram.com/_manokamna_singh/" style="user-select: auto;">
-                                <i class="fab fa-instagram" style="user-select: auto;"></i>Instagram </a>
-                        </li>
-                    </ul>
-			</div>
-                </div>
-            </div>
-	</div>
-    </div>
-<footer class="text-center py-5 text-dark bg-light">&copy2021Copyright;Codeinsight.com</footer>
-               
     
+    <div class="modal-content rounded-6 ">
+      <div class="newslettre-info" style="user-select: auto;">
+        <div style="text-align:center">
+                      <h5 style="user-select: auto;">Follow Me:-</h5>
+                      <p style="user-select: auto;"> My social media links </p>
+                  </div>
+            <div style="text-align:center">
+                  <div class="social-icones" style="user-select: auto;">
+                      <ul class="list-inline" style="user-select: auto;">
+                          <li style="user-select: auto;">
+                              <a target="_blank" href="https://www.linkedin.com/in/manokamna-singh-b25017213" style="user-select: auto;">
+                                  <i class="fab fa-linkedin" style="user-select: auto;"></i>Linkedin</a>
+                          </li>
+                          <li style="user-select: auto;">
+                              <a target="_blank" href="https://github.com/Manokamnasingh1" style="user-select: auto;">
+                                  <i class="fab fa-github" style="user-select: auto;"></i>Github</a>
+                          </li>
+                          <li style="user-select: auto;">
+                              <a target="_blank" href="#" style="user-select: auto;">
+                                  <i class="fab fa-facebook-f" style="user-select: auto;"></i>Facebook</a>
+                          </li>
+                          <li style="user-select: auto;">
+                              <a target="_blank" href="https://www.instagram.com/_manokamna_singh/" style="user-select: auto;">
+                                  <i class="fab fa-instagram" style="user-select: auto;"></i>Instagram </a>
+                          </li>
+                      </ul>
+        </div>
+                  </div>
+              </div>
+    </div>
+      </div>
+    
+       
+        
+      
+      
+    
+<footer class="text-center py-2 text-light bg-dark">&copy2021Copyright;Codeinsight.com</footer>
+
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->

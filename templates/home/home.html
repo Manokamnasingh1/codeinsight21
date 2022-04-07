@@ -4,7 +4,7 @@
   {% block homeactive %} active {% endblock homeactive %}
 
   {% block body %}
-
+  {% load static %}
   <div class="container-fluid mx-0 px-0">
   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
@@ -42,9 +42,67 @@
       <p class="lead fw-normal">Blogpost</p>
       <a class="btn btn-outline-secondary" href="/blog">Go to blog»</a>
     </div>
-    <div class="product-device shadow-sm d-none d-md-block"></div>
-    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+    
   </div>
 
 </div>
+<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+<section class="s1">
+  <div class="main-container">
+    <h3 style="text-align: center; padding:20px;">FEATURES</h3>
+
+    <div class="post-wrapper">
+
+      <div>
+        <div class="post">
+          <img class="thumbnail" src="{% static 'images/DSA.jpeg' %}"></li>
+          <div class="post-preview">
+            <h6 class="post-title">400+ DSA Prectice Qustions</h6>
+           
+            <p> more then 400 Qustions </p>
+            <p><a class="btn btn-outline-secondary" href="https://drive.google.com/file/d/1FMdN_OCfOI0iAeDlqswCiC2DZzD4nPsb/view">View</a> </p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="post">
+          <img class="thumbnail" src="{% static 'images/SQL.jpg' %}"></li>
+          <div class="post-preview">
+            <h6 class="post-title">SQL</h6>
+            <p class="post-intro">Sql </p>
+            <p><a class="btn btn-outline-secondary" href="#">View</a> </p>								
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="post">
+          <img class="thumbnail" src="{% static 'images/OS.jpg' %}">
+          <div class="post-preview">
+            <h6 class="post-title">Oprating System</h6>
+            <p class="post-intro">Operating System </p>
+            <p><a class="btn btn-outline-secondary" href="#">View</a> </p>
+          </div>
+        </div>
+      </div>
+      <div>
+
+        <div class="post">
+          <img class="thumbnail" src="{% static 'images/html.png' %}">
+          <div class="post-preview">
+            <h6 class="post-title">HTML NOTES</h6>
+            <p class="post-intro">Html Hand Written Notes </p>
+            <p><a class="btn btn-outline-secondary" href="https://drive.google.com/file/d/1A1XOS8edavMzjFQqIn-Et7G8C9-ZNqLZ/view?usp=drivesdk">View</a> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    </div>
+  </div>
+</section>
+
+
 {% endblock body %}
