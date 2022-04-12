@@ -1,3 +1,16 @@
+.greeting-wrapper{
+	display: grid;
+	text-align: center;
+	align-content: center;
+	min-height: 10em;
+}
+
+
+
+ 
+
+
+
 .post-wrapper{
 	display: grid;
 	grid-template-columns: repeat(auto-fit, 320px);
