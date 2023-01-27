@@ -1,3 +1,3 @@
 # codeinsight21
 # Liveon : 
-https://codeinsight.up.railway.app/
+https://web-production-aaec.up.railway.app/
